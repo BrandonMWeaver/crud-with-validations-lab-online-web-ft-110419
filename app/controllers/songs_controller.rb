@@ -1,5 +1,7 @@
 class SongsController < ApplicationController
-  before_action :set_song!,
+  
+  before_action :set_song!
+  
   def index
     @songs = Song.all
   end
@@ -27,6 +29,10 @@ class SongsController < ApplicationController
   
   def song_params(*args)
     return params.require(:song).permit(*args)
+  end
+  
+  def set_song!
+    
   end
   
 end
