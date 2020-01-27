@@ -1,17 +1,17 @@
 <h1>Songs</h1>
 <table>
-<% @songs.each do |song| %>
   <tr>
     <th>Title</th>
     <th>Release Year</th>
     <th>Artist Name</th>
     <th>Genre</th>
   </tr>
-  <tr>
-    <td><%= link_to song.title, song_path(song) %></td>
-    <td><%= song.release_year %></td>
-    <td><%= song.artist_name %></td>
-    <td><%= song.genre %></td>
-  </tr>
-<% end %>
+  <% @songs.each do |song| %>
+    <tr>
+      <td><%= link_to song.title, song_path(song) %></td>
+      <td><%= song.release_year %></td>
+      <td><%= song.artist_name %></td>
+      <td><%= song.genre %></td>
+    </tr>
+  <% end %>
 </table>
