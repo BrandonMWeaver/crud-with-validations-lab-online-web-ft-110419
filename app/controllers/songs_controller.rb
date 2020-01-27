@@ -32,7 +32,7 @@ class SongsController < ApplicationController
   end
   
   def set_song!
-    
+    @song = Song.find(params[:id])
   end
   
 end
