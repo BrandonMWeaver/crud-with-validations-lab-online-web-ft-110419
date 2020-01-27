@@ -21,4 +21,8 @@ class SongsController < ApplicationController
   def update
   end
   
+  def song_params(*args)
+    return 
+  end
+  
 end
