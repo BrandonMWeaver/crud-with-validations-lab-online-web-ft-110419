@@ -12,3 +12,12 @@
   <%= f.submit "Update Song" %>
 <% end %>
 <%= link_to "Delete", @song, method: :delete %>
+
+<% if @song.errors.any? %>
+  <p>Errors:</p>
+  <ul>
+    <% @song.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
