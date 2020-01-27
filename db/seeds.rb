@@ -1,1 +1,1 @@
-Song.create(title: "Test",)
+Song.create(title: "Test", released: false,)
