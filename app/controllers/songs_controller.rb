@@ -22,7 +22,7 @@ class SongsController < ApplicationController
   end
   
   def song_params(*args)
-    return params.permit
+    return params.require(:song).permit(*args)
   end
   
 end
