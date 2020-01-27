@@ -22,7 +22,7 @@ class SongsController < ApplicationController
   end
   
   def song_params(*args)
-    return 
+    return params.permit
   end
   
 end
