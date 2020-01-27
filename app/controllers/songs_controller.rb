@@ -35,6 +35,10 @@ class SongsController < ApplicationController
     end
   end
   
+  def destroy
+    
+  end
+  
   def song_params(*args)
     return params.require(:song).permit(*args)
   end
