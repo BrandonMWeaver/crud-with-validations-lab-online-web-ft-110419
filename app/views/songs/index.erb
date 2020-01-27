@@ -8,7 +8,8 @@
     <th>Genre</th>
   </tr>
   <tr>
-  <td><%= link_to song.title, song_path(song) %></td>
+    <td><%= link_to song.title, song_path(song) %></td>
+    <td><%= @song.release_year %></td>
   </tr>
 <% end %>
 </table>
